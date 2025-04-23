@@ -25,13 +25,29 @@
 <!-- Adicione este conteúdo após o <header> -->
     <section class="contato">
         <h2>Entre em Contato</h2>
-        <form>
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="E-mail" required>
-            <input type="tel" placeholder="Telefone">
-            <textarea placeholder="Está interessado em algum imóvel? Especifique usando #[número] correspondente!" required></textarea>
+        <form onsubmit="return redirectToWhatsApp()">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="tel" id="telefone" placeholder="Telefone">
+            <textarea id="mensagem" placeholder="Está interessado em algum imóvel? Especifique usando #[número] correspondente!" required></textarea>
             <button type="submit" class="btn">Enviar Mensagem</button>
         </form>
+        
+        <script>
+        function redirectToWhatsApp() {
+            const nome = document.getElementById("nome").value;
+            const email = document.getElementById("email").value;
+            const telefone = document.getElementById("telefone").value;
+            const mensagem = document.getElementById("mensagem").value;
+        
+            const texto = encodeURIComponent(
+                `Olá! Meu nome é ${nome}.\nEmail: ${email}\nTelefone: ${telefone}\nMensagem: ${mensagem}`
+            );
+        
+            window.open(`https://wa.me/5547999865716?text=${texto}`, "_blank");
+            return false;
+        }
+        </script>
         <div class="info-contato">
             <p><i class="fas fa-phone"></i> (48) 3204-4058</p>
             <p><i class="fas fa-envelope"></i> contato@imobiliariaalicerce.com.br</p>
