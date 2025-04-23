@@ -1,0 +1,187 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #003366;
+    color: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.logo span {
+    color: #FF6B00;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #FF6B00;
+}
+
+/* Hero Banner */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/rendering.jpg');
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+}
+
+.hero-content span {
+    color: #FF6B00;
+}
+
+.btn {
+    background: #FF6B00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* Sobre */
+
+.div-sobre {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.diferenciais {
+    margin-top: 3rem;
+}
+
+.diferencial {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1.11fr;
+    gap: 10px;
+}
+
+.diferencial h3 {
+    text-align: left;
+}
+
+.diferencial i {
+    margin-right: 10px;
+    text-align: right;
+}
+
+.diferencial #i2 {
+    margin-right: 12.5px;
+}
+
+/* Cards de Imóveis */
+.grid-imoveis {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 2rem 5%;
+}
+
+.imoveis-lista h2 {
+    padding: 2rem 5%;
+}
+
+.card-imovel {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-imovel img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-imovel h3, .card-imovel p, .card-imovel a {
+    margin: 10px;
+}
+
+.preco {
+    font-weight: bold;
+    color: #FF6B00;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+/* Formulário de Contato */
+
+
+.contato {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 20px;
+}
+
+.contato button {
+    margin-bottom: 15px;
+}
+
+.contato i {
+    margin-right: 10px;
+}
+
+.contato #i1 {
+    margin-right: 12px;
+    margin-left: 2px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.social {
+    margin-top: 2rem;
+}
+
+.social a {
+    color: white;
+    margin: 0 10px;
+}
